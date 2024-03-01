@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stacks items vertically */
+        }
+
+        .footer-item {
+            margin-bottom: 10px; /* Add bottom margin for spacing */
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-item i {
+            margin-right: 5px; /* Add spacing between icon and text */
+        }
+
+        .footer-item span {
+            display: block; /* Make each item appear on a new line */
+            margin-top: 5px; /* Add top margin for spacing between lines */
+        }
+
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .footer-social a:hover {
+            color: #007bff;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+    .footer-item i,
+    .footer-social a {
+        font-size: 18px; /* Decrease icon size for better visibility */
+    }
+
+    .footer-item span {
+        font-size: 14px; /* Decrease font size for better readability */
+        margin-top: 8px; /* Adjust top margin for spacing */
+    }
+
+    /* Display each class in a new line */
+    .footer-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Additional styling for specific elements */
+    .footer-item .first1, .footer-item .second, .footer-item .third, .footer-item .four {
+        margin-bottom: 15px; /* Add bottom margin for better spacing between groups */
+    }
+
+    .footer-item .first1, .footer-item .third {
+        border-bottom: 1px solid #666; /* Add a border between sections */
+        padding-bottom: 10px; /* Add padding at the bottom of sections */
+    }
+
+    .footer-item .second, .footer-item .four {
+        margin-top: 10px; /* Add top margin between sections */
+    }
+
+    .footer-social {
+        margin-top: 20px; /* Add top margin for social media icons */
+    }
+
+    .footer-social a {
+        font-size: 24px; /* Increase font size of social media icons */
+    }
+}
+
+    </style>
+    <title>Footer Example</title>
+</head>
+<body>
+    <!-- Your page content here -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item">
+                <div class="first1">
+                    <i class="fas fa-user"></i>
+                    <span>Name:&nbsp;Soundappan M&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                    <br>
+                </div>
+                <div class="second">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email:&nbsp;soundappanm6@gmail.com&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                    <br>
+                </div>
+                <div class="third">
+                    <i class="fas fa-phone"></i>
+                    <span>Phone:&nbsp;+91 6379542804&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                    <br>
+                </div>
+                <div class="four">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Address:&nbsp;Neikarapatty, Salem-636010</span>
+                    <br>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <a href="your_linkedin_profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="your_github_profile" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- Add more social media links as needed -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ensure you have the Font Awesome library linked -->
+    <!-- You can include it from a CDN like this -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script> -->
+</body>
+</html>

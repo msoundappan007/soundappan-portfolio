@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ABOzpwEecBrb02Skn8rvFFaJqTKmJlHkXMiF9mOdWxF+YWP5ls88XxCQF6Nbcn/C0qQv82bGb9/fIuMGn6d1cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./images/Logo.png">
+
+    <title>Credit Card Fraud Detection</title>
+    <style>
+        .navbar
+        {
+            margin: auto;
+            position: fixed;
+            background-color: crimson;
+        }
+       /* Updated CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 1px auto; /* Adjust the top margin */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff; /* Set background color for project details */
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 0; /* Remove default margin */
+}
+
+p {
+    line-height: 1.5;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.additional-details {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+        img {
+            width: 700px; /* Adjust the width as needed */
+            height: auto; /* Automatically adjust the height while maintaining aspect ratio */
+        }
+        @media only screen and (max-width: 600px) {
+            img {
+                width: 80%; /* Adjust the width for smaller screens */
+            }
+        }
+        p {
+            line-height: 1.6; /* Adjust the line height for readability */
+            text-align: justify; /* Justify the text for neat alignment */
+            margin-bottom: 20px; /* Add some space at the bottom */
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-double-up"></i>
+     </div>
+     <!-- Scroll Button end -->
+     <!-- Navbar Start-->
+     <!-- <nav class="navbar">
+        <div class="max-width">
+           <div class="logo">
+              </a>
+           </div> -->
+           <!-- <ul class="menu">
+              <li>
+                 <a href="#home" class="menu-btn">Home</a>
+              </li>
+              <li>
+                 <a href="#about" class="menu-btn">About</a>
+              </li>
+              <li>
+                 <a href="#skills" class="menu-btn">Skills</a>
+              </li>
+              <li>
+                 <a href="#projects" class="menu-btn">Certificate</a>
+              </li>
+              <li>
+                 <a href="#projectshow" class="menu-btn">Projects</a>
+              </li>
+              <li>
+                 <a href="#contact" class="menu-btn">Contact</a>
+              </li>
+           </ul> -->
+           <div class="menu-btn">
+              <i class="fas fa-bars"></i>
+           </div>
+        </div>
+     </nav>
+
+
+     <div class="container">
+        <div class="project-details">
+            <h1 style="text-align: center;">Credit Card Fraud Detection</h1>
+            <h2 class="title fadein">Enhancing Credit Card Security: PCA-Based Fraud Detection with Logistic Regression</h2>
+            <p>
+
+                This project focuses on bolstering credit card security through a sophisticated fraud detection system. Leveraging Principal Component Analysis (PCA) for dimensionality reduction and Logistic Regression as the predictive model, the system efficiently identifies potential fraudulent transactions. PCA simplifies the dataset by transforming variables into orthogonal components, retaining crucial information while reducing complexity. Logistic Regression, a robust classification algorithm, then predicts the likelihood of a transaction being fraudulent based on the reduced feature set. By amalgamating these techniques, the system enhances security measures, ensuring safer credit card transactions for users and financial institutions alike.</p>
+            <!-- Video section -->
+            
+           
+    
+            <!-- Additional paragraphs -->
+            <div class="additional-details">
+                
+                <h2>Data Collection:</h2>
+    <ul>
+        <li>Gather a comprehensive dataset of credit card transactions, including features such as transaction amount, location, time, and previous transaction history.</li>
+    </ul>
+    
+    <h2>Data Preprocessing:</h2>
+    <ul>
+        <li>Handle missing values: Use techniques like mean imputation or predictive imputation to fill missing data.</li>
+        <li>Scale features: Normalize or standardize numerical features to ensure uniformity in data distribution.</li>
+        <li>Encode categorical variables: Convert categorical variables into numerical format using techniques like one-hot encoding.</li>
+    </ul>
+
+    <h2>Dimensionality Reduction with PCA:</h2>
+    <ul>
+        <li>Apply PCA to reduce the dimensionality of the dataset while retaining essential information.</li>
+        <li>PCA identifies patterns and correlations among features and projects them onto a lower-dimensional space.</li>
+        <li>Determine the optimal number of principal components based on explained variance ratio or cumulative explained variance.</li>
+    </ul>
+
+    <h2>Model Training with Logistic Regression:</h2>
+    <ul>
+        <li>Split the preprocessed data into training and testing sets.</li>
+        <li>Train a Logistic Regression model on the PCA-transformed training data.</li>
+        <li>Logistic Regression is a binary classification algorithm that estimates the probability of a transaction being fraudulent based on input features.</li>
+    </ul>
+
+    <h2>Model Evaluation:</h2>
+    <ul>
+        <li>Evaluate the performance of the Logistic Regression model using evaluation metrics such as accuracy, precision, recall, and F1-score.</li>
+        <li>Use techniques like cross-validation to ensure the model's robustness and generalization.</li>
+    </ul>
+
+    <h2>Fraud Detection and Prediction:</h2>
+    <ul>
+        <li>Apply the trained Logistic Regression model to predict the likelihood of fraud for new credit card transactions.</li>
+        <li>Set a threshold probability above which transactions are flagged as potentially fraudulent.</li>
+        <li>Monitor and analyze model predictions regularly to refine the fraud detection system and adapt to evolving fraud patterns.</li>
+    </ul>
+               
+            </div>
+            <p>Find the code on GitHub: <a href="https://github.com/msoundappan007/Credit_Card_Fraud_Detection" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a></p>
+        </div>
+    </div>
+    
+    
+    </body>
+    </html>
+</body>
+</html>
